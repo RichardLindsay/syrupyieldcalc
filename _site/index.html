@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles.css" rel="stylesheet" />
+  <title>Syrup yield calculator</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Syrup yield calculator</h1>
+
+    <form>
+      <div class="field">
+        <label>Viscosity of syrup</label>
+        <label for="1:1">
+          <input type="radio" id="1:1" name="syrup_type" value="1">
+          1:1
+        </label>
+        <label for="2:1">
+          <input type="radio" id="2:1" name="syrup_type" value="2">
+          2:1
+        </label>
+      </div>
+      <div class="field">
+        <label for="">Amount of syrup required (ml)</label>
+        <input type="number" class="syrup_amount">
+      </div>
+      <button>Get amount of sugar and water required</button>
+    </form>
+    <div class="results">
+      <h2>Amount of sugar required</h2>
+      <h3 class="sugar"></h3>
+      <h2>Amount of water required</h2>
+      <h3 class="water"></h3>
+    </div>
+
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
